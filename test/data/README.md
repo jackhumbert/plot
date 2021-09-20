@@ -101,3 +101,7 @@ https://www.census.gov/retail/mrts/historic_releases.html
 ## us-state-population-2010-2019.csv
 U.S. Census Bureau (?)
 https://observablehq.com/@d3/diverging-bar-chart
+
+## wealth-britain.csv
+U.K. Office for National Statistics
+https://stephanieevergreen.com/proportion-plots/
