@@ -8,9 +8,7 @@ export default async function () {
     {x: "d", y: "a", value: 2},
     {x: "d", y: "b", value: 2}
   ];
-  const domain = [
-    ...new Set([...Plot.valueof(data, "x"), ...Plot.valueof(data, "y")])
-  ].sort();
+  const domain = d3.sort(d3.union(d3.map(data, d => d.x), d3.map(data, d => d.y)));
 
   return Plot.plot({
     marks: [

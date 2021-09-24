@@ -18,7 +18,7 @@ export default async function() {
       domain: columns,
       axis: "top",
       label: "",
-      tickFormat: d => d === "population" ? "Share of population" : "Share of national wealth",
+      tickFormat: d => `Share of ${d}`,
       tickSize: 0,
       padding: 0 // see margins
     },
@@ -26,7 +26,10 @@ export default async function() {
       axis: null,
       reverse: true
     },
-    color: { scheme: "prgn", reverse: true },
+    color: {
+      scheme: "prgn",
+      reverse: true
+    },
     marks: [
       Plot.areaY(data, Plot.stackY({
         ...stack,
